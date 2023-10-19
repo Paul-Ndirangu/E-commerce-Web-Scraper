@@ -10,4 +10,4 @@ page = requests.get('https://www.thewhiskyexchange.com/c/35/japanese-whisky')
 
 soup = BeautifulSoup(page.content,'html.parser')
 
-print(soup)
+results = soup.find(id="product-card__image")
