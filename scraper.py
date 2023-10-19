@@ -14,3 +14,4 @@ results = soup.find_all('div', attrs= {'class': 'product-grid__item'})
 
 for element in results:
     print(element, end="\n"*2)
+    print()
